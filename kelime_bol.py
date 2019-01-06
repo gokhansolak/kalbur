@@ -174,6 +174,9 @@ def ekkaydet():
             print("{} {}".format(e, ekler_dict[e]), file=f, flush=True)
 
 def uzatma_temizle(kelime):
+    """
+    Tekrar eden ardıl harfleri siliyor.
+    """
     if kelime in ['www','ııı','vııı','xııı']:
         return kelime
     k=''
